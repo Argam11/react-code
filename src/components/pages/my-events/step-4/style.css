@@ -1,0 +1,37 @@
+.vendors {
+    margin-top: 50px;
+}
+.vendors .title {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.vendor-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+}
+.vendor-item .photo {
+    display: flex;
+}
+.vendor-item .photo img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.vendor-item .about {
+    margin-left: 20px;
+}
+.vendor-item .about h3 {
+    font-weight: 600;
+}
+.vendor-item .about p {
+    font-size: 12px;
+    margin-top: 5px;
+    max-width: 80%;
+}
+.vendor-item .services {
+    font-weight: 500;
+    font-size: 14px;
+}

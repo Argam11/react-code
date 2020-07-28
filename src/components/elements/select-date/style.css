@@ -1,0 +1,31 @@
+.select-date-block p {
+    font-size: 10px;
+    height: 14px;
+}
+.select-date-block input {
+    border-radius: 12px;
+    border: 1px solid #d1d1d1;
+    padding: 10px 8px;
+    outline: none;
+    width: 100%;
+    margin-top: 3px;
+    background-image: url("../../../assets/images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: 140% 50%;
+    position: relative;
+}
+.select-date-block input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+}
+.select-date-block input[type="date"]::before {
+    content: attr(data-placeholder);
+    width: 100%;
+    color: #d1d1d1;
+}
+.select-date-block input[type="date"]:focus::before,
+.select-date-block input[type="date"]:valid::before {
+    display: none;
+}

@@ -1,0 +1,21 @@
+.select-block p {
+    font-size: 10px;
+    height: 14px;
+}
+.select-block select {
+    border-radius: 12px;
+    border: 1px solid #d1d1d1;
+    padding: 10px 8px;
+    outline: none;
+    width: 100%;
+    margin-top: 3px;
+}
+.select-block select:required:invalid {
+    color: gray;
+}
+.select-block option[value=""][disabled] {
+    display: none;
+}
+.select-block option {
+    color: black;
+}

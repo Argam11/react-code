@@ -1,0 +1,22 @@
+.guest-list {
+    margin-top: 80px;
+}
+.guest-list .table-head {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr 3fr 4.5fr 2fr;
+    font-weight: 500;
+    font-size: 12px;
+}
+.guest-list .table-row {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr 3fr 4.5fr 2fr;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 30px 0;
+}
+.guest-list .table-row:not(:last-child) {
+    border-bottom: 1px solid #eedddd;
+}
+.step-3 .button {
+    margin-top: 30px;
+}

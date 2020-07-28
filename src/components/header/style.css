@@ -1,0 +1,63 @@
+.header {
+    height: 150px;
+    -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.menu {
+    display: flex;
+}
+.menu-item:not(:first-child) {
+    margin-left: 40px;
+}
+.menu-item {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+.menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ee386f;
+    transition: all 0.2s linear;
+}
+.menu-item.active::after {
+    width: 100%;
+    left: 0;
+}
+.menu-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+.menu-item .unread-messages {
+    width: 18px;
+    height: 18px;
+    background-color: #ee386f;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.menu-item .arrow-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+}
